@@ -1,0 +1,97 @@
+# Folders and files to be ignored by Git
+# Choices and comments by NetAgence.com from various sources
+
+############
+# WordPress specific
+############
+www/wp-config-* # A part templates, tous fichiers de config locaux avec codes reels exclus, ex wp-config-dev.php wp-config-preprod.php wp-config-prod.php etc.
+!www/wp-config-template.php # Ne pas ignorer les fichiers template de reference.
+!www/wp-config-dev-template.php
+!www/wp-config-preprod-template.php
+!www/wp-config-prod-template.php
+# wp-config.php exclu en temps normal: codes confidentiels et configs a ne jamais mettre en GIT, mais ici neutre, juste recherche de la conf approprie donc a garder.
+!www/wp-config.php
+www/wp-config-prod.php
+www/wp-config-preprod.php
+
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/*
+wp-content/cache/supercache/*
+wp-content/cache/
+wp-content/backups/
+
+############
+## IDEs
+############
+*.pydevproject
+.project
+.metadata
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.externalToolBuilders/
+*.launch
+.cproject
+.buildpath
+nbproject/
+node_modules/*
+premium/node_modules/*
+
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+*.iml
+
+# Webstorm files
+**/.idea/workspace.xml
+**/.idea/tasks.xml
+.idea/
+
+############
+## OSes
+############
+[Tt]humbs.db
+[Dd]esktop.ini
+*.DS_store
+.DS_store?
+
+############
+## Misc
+############
+*~
+.cvs
+*.swp
+Thumbs.db
+bin/
+tmp/
+*.tmp
+*.bak
+*.log
+*.[Cc]ache
+*.cpr
+*.orig
+*.php.in
+.idea/
+temp/
+._*
+.Trashes
+.svn
+**/resources/gulp/node_modules
+**/nbproject/private/
+**/nbproject/project.properties
+**/nbproject/project.xml
+sitemap.xml
+sitemap.xml.gz
+
+############
+## Security
+############
+*.sql
+*.dump
+*.back
